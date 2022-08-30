@@ -22,4 +22,13 @@ struct cdimage {
 };
 
 
-bool parse_cdfs(FILE* w, cdimage* cdio, const char* prefix, int offs, bool first);
+/**
+ * \brief 
+ * \param w 
+ * \param cdio 
+ * \param prefix 
+ * \param offs 
+ * \param first 
+ * \return 
+ */
+auto parse_cdfs(FILE* w, cdimage* cdio, const char* prefix, int offs, bool first) -> bool;

@@ -563,7 +563,8 @@ void find(FILE* w, directent* rootent, fs* fsd, char* pathname) {
 }
 
 
-bool parse_cdfs(FILE* w, cdimage* cdio, const char* name, int offs, bool first) {
+auto parse_cdfs(FILE* w, cdimage* cdio, const char* name, int offs, bool first) -> bool
+{
 	//im
 	fs fsd;
 	directent rootent;
